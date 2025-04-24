@@ -20,7 +20,7 @@
 - hosts: masternode
   name: fetch join token file
   gather_facts: false
-  become: yes
+  become: true
   tasks:
   - name: fetch join token file
     ansible.builtin.fetch:
